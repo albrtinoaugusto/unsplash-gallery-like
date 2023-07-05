@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vertex</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      height: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .gallery {
+      padding: 10px;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #f2f2f2;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-auto-rows: 250px;
+      grid-auto-flow: dense;
+    }
+
+    /* Vertical Things */
+    .v-stretch {
+      grid-row: span 2;
+    }
+
+    .v-small-stretch {
+      grid-row: span 0.5;
+    }
+
+    /* Horizontal Things */
+    .h-stretch {
+      grid-column: span 2;
+    }
+
+    /* Horizontal & Vertical hings */
+    .big-stretch {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .gallery div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /** ***/
+    @media only screen and (max-width: 560px) {
+      .v-stretch {
+        grid-row: span 1;
+      }
+
+      .h-stretch {
+        grid-column: span 1;
+      }
+
+      .big-stretch {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="gallery">
+      <div class="v-stretch">
+        <img src="https://source.unsplash.com/the-mountains-are-covered-in-snow-and-trees-hIplG0rnVbE"
+          class="gallery__img" alt="Image 1">
+      </div>
+      <div class="v-stretch">
+        <img src="https://source.unsplash.com/a-person-skiing-down-a-snow-covered-mountain-UlRGg_R7Miw"
+          class="gallery__img" alt="Image 2">
+      </div>
+      <div class="v-stretch">
+        <img src="https://source.unsplash.com/a-group-of-trees-that-are-covered-in-snow-b4rxPjktjzw"
+          class="gallery__img" alt="Image 3">
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/a-snow-covered-mountain-with-a-few-trees-in-the-foreground-qhufz3kiGak"
+          class="gallery__img" alt="Image 4">
+      </div>
+
+
+
+
+      <div>
+        <img src="https://source.unsplash.com/a-van-parked-on-the-side-of-a-road-under-a-night-sky-OapsdzACS_Q"
+          class="gallery__img" alt="Image 4">
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/a-person-skiing-down-a-snow-covered-mountain-UlRGg_R7Miw"
+          class="gallery__img" alt="Image 4">
+      </div>
+      <div class="big-stretch">
+        <img src="https://source.unsplash.com/a-large-rock-in-the-middle-of-a-desert-J4XcbqTXhT8"
+          class="gallery__img" alt="Image 4">
+      </div>
+      <div class="h-stretch">
+        <img src="https://source.unsplash.com/a-snowy-mountain-with-a-pink-sky-in-the-background-JOvbSDFvrlg"
+          class="gallery__img" alt="Image 5">
+      </div>
+      <div class="v-stretch">
+        <img src="https://source.unsplash.com/a-tall-white-building-next-to-a-tall-white-building-k1APT2607Cw"
+          class="gallery__img" alt="Image 6">
+      </div> 
+    </div>
+  </div>
+</body>
+
+</html>
