@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <title>Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .app {
+      width: 80vw;
+      margin: 2rem auto;
+    }
+
+    .card {
+      columns: 4 12rem;
+      gap: 1rem;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      transition: .2s ease-in-out;
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="card">
+      <img src="https://picsum.photos/id/200/720/1200" alt="Gallery image 2" className="galleryImg" />
+      <img src="https://picsum.photos/id/237/1200/720" alt="Gallery image 2" className="galleryImg" />
+      <img src="https://picsum.photos/1200/720?grayscale" alt="Gallery image 2" className="galleryImg" />
+      <img src="https://picsum.photos/1200/720/?blur=2" alt="Gallery image 2" className="galleryImg" />
+      <img src="https://picsum.photos/id/870/1200/720?grayscale&blur=2" alt="Gallery image 2" className="galleryImg" />
+      <img src="https://picsum.photos/id/200/720/1200" alt="Gallery image 2" className="galleryImg" />
+      <img src="https://picsum.photos/id/237/1200/720" alt="Gallery image 2" className="galleryImg" />
+      <img src="https://picsum.photos/1200/720?grayscale" alt="Gallery image 2" className="galleryImg" />
+      <img src="https://picsum.photos/1200/720/?blur=2" alt="Gallery image 2" className="galleryImg" />
+      <img src="https://picsum.photos/id/870/1200/720?grayscale&blur=2" alt="Gallery image 2" className="galleryImg" />
+    </div>
+  </div>
+</body>
+
+</html>
